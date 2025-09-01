@@ -1,0 +1,532 @@
+<!-- tailwindcss -->
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strawhat - Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/webp" href="assets/logo1.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    * {
+      font-family: "Montserrat", sans-serif;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <body class="relative text-white overflow-x-hidden">
+    <div
+      class="absolute inset-0 -z-10 bg-cover bg-no-repeat"
+      style="background-image: url('assets/MainBackground2.webp')"
+    ></div>
+    <!-- Navbar -->
+    <header class="bg-white text-[#80AC3C] shadow-md w-full z-20 relative">
+      <div class="flex items-center justify-between px-4 md:px-12 py-3">
+        <div class="flex items-center">
+          <img
+            src="assets/LogoPanjang.webp"
+            alt="Logo"
+            class="h-10 md:h-20 w-auto"
+          />
+        </div>
+        <!-- Burger & Close in one button -->
+        <button
+          id="burgerBtn"
+          class="md:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none group z-50 relative"
+        >
+          <span
+            class="top-line w-8 h-1 bg-green-600 mb-1 rounded transition-all duration-300 origin-center"
+          ></span>
+          <span
+            class="middle-line w-8 h-1 bg-green-600 mb-1 rounded transition-opacity duration-300"
+          ></span>
+          <span
+            class="bottom-line w-8 h-1 bg-green-600 rounded transition-all duration-300 origin-center"
+          ></span>
+        </button>
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-12 text-sm tracking-wider">
+          <a href="index.html" class="hover:text-green-600">HOME</a>
+          <a href="#product" class="hover:text-green-600">PRODUCT</a>
+          <a href="profile.html" class="hover:text-green-600">PROFILE</a>
+          <a href="contact.html" class="hover:text-green-600">CONTACT</a>
+        </nav>
+      </div>
+      <!-- Mobile Nav 1-->
+      <nav
+        id="mobileMenu"
+        class="absolute top-full border-y border-gray-300 left-0 w-full bg-white text-[#80AC3C z-50 flex flex-col items-center text-lg font-bold gap-6 py-6 px-4 transition-all duration-500 ease-in-out max-h-0 overflow-hidden opacity-0 pointer-events-none md:hidden"
+      >
+        <a
+          href="index.html"
+          class="block py-3 px-8 rounded hover:bg-green-600 hover:text-white transition-all duration-200"
+        >
+          Home
+        </a>
+        <a
+          href="#product"
+          class="block py-3 px-8 rounded hover:bg-green-600 hover:text-white transition-all duration-200"
+        >
+          Product
+        </a>
+        <a
+          href="profile.html"
+          class="block py-3 px-8 rounded hover:bg-green-600 hover:text-white transition-all duration-200"
+        >
+          Profile
+        </a>
+        <a
+          href="contact.html"
+          class="block py-3 px-8 rounded hover:bg-green-600 hover:text-white transition-all duration-200"
+        >
+          Contact
+        </a>
+      </nav>
+    </header>
+
+    <!-- Hero Image -->
+    <section class="relative md:py-6 md:px-12">
+      <img
+        src="assets/Product/HeroImage.webp"
+        alt="Foto Tim Strawhat"
+        class="w-full rounded-b-xl md:rounded-[90px] md:h-[calc(100vh-120px)] object-cover"
+      />
+    </section>
+
+    <!-- Product Image Section -->
+    <section
+      id="product"
+      class="text-center mx-auto md:text-[20px] text-sm mt-6 mx-20 text-[#e1f8cc]"
+    >
+      <h1
+        data-aos="fade-up"
+        class="text-[7vw] md:text-[8vw] font-black leading-tight"
+      >
+        PRODUCT
+      </h1>
+      <div
+        class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-y-10 md:gap-x-4 pt-10 items-center place-content-center place-items-center"
+      >
+        <div data-aos="zoom-in" class="rounded-[20px] group">
+          <img
+            src="assets/Product/pakcoi.webp"
+            alt="Logo Pakcoi"
+            class="md:w-52 md:h-52 w-32 h-32 rounded-[20px] overflow-hidden border-2 border-white p-2 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+
+        <div data-aos="zoom-in" class="rounded-[20px] group">
+          <img
+            src="assets/Product/tomat.webp"
+            alt="Logo"
+            class="md:w-52 md:h-52 w-32 h-32 rounded-[20px] overflow-hidden border-2 border-white p-2 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+
+        <div data-aos="zoom-in" class="rounded-[20px] group">
+          <img
+            src="assets/Product/Sawi.webp"
+            alt="Logo"
+            class="md:w-52 md:h-52 w-32 h-32 rounded-[20px] overflow-hidden border-2 border-white p-2 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+
+        <div data-aos="zoom-in" class="rounded-[20px] group">
+          <img
+            src="assets/Product/mint.webp"
+            alt="Logo Mint"
+            class="md:w-52 md:h-52 w-32 h-32 rounded-[20px] overflow-hidden border-2 border-white p-2 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+
+        <div data-aos="zoom-in" class="rounded-[20px] group">
+          <img
+            src="assets/Product/paprika.webp"
+            alt="Logo"
+            class="md:w-52 md:h-52 w-32 h-32 rounded-[20px] overflow-hidden border-2 border-white p-2 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+
+        <div data-aos="zoom-in" class="rounded-[20px] group">
+          <img
+            src="assets/Product/Selada.webp"
+            alt="Logo"
+            class="md:w-52 md:h-52 w-32 h-32 rounded-[20px] overflow-hidden border-2 border-white p-2 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+
+        <div data-aos="zoom-in" class="rounded-[20px] group">
+          <img
+            src="assets/Product/kangkung.webp"
+            alt="Logo Kangkung"
+            class="md:w-52 md:h-52 w-32 h-32 rounded-[20px] overflow-hidden border-2 border-white p-2 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+
+        <div data-aos="zoom-in" class="rounded-[20px] group">
+          <img
+            src="assets/Product/Kale.webp"
+            alt="Logo Kale"
+            class="md:w-52 md:h-52 w-32 h-32 rounded-[20px] overflow-hidden border-2 border-white p-2 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+
+        <div data-aos="zoom-in" class="rounded-[20px] group">
+          <img
+            src="assets/Product/Tatsoi.webp"
+            alt="Logo Tatsoi"
+            class="md:w-52 md:h-52 w-32 h-32 rounded-[20px] overflow-hidden border-2 border-white p-2 object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="my-28 text-[#e1f8cc] overflow-hidden">
+      <div
+        class="grid grid-cols-2 gap-4 justify-center items-center my-16 px-6"
+      >
+        <!-- Product Bagian Kri -->
+        <div class="flex flex-col gap-y-12">
+          <div
+            data-aos="fade-right"
+            class="flex flex-col items-center justify-center"
+          >
+            <div class="rounded-[20px] group">
+              <img
+                src="assets/Product/pakcoi.webp"
+                alt="Logo Pakcoi"
+                class="w-38 md:w-60 border-2 border-white p-2 transition-transform duration-300 ease-in-out group-hover:scale-110 rounded-xl h-auto"
+              />
+            </div>
+            <h1 class="text-[7vw] md:text-[6vw] font-black leading-tight">
+              PAKCOI
+            </h1>
+            <p
+              class="text-justify mx-auto md:text-[20px] text-[13px] max-w-[32ch] md:max-w-[32ch] leading-snug"
+            >
+              Pakcoi muda yang renyah dengan rasa ringan dan alami, sempurna
+              untuk sup, tumisan, atau sajian segar
+            </p>
+          </div>
+          <!-- Bagian Kiri -->
+          <div
+            data-aos="fade-right"
+            class="flex flex-col items-center justify-center"
+          >
+            <div class="rounded-[20px] group">
+              <img
+                src="assets/Product/mint.webp"
+                alt="Logo Mint"
+                class="w-38 md:w-60 border-2 border-white p-2 transition-transform duration-300 ease-in-out group-hover:scale-110 rounded-xl h-auto"
+              />
+            </div>
+            <h1 class="text-[7vw] md:text-[6vw] font-black leading-tight">
+              MINT
+            </h1>
+            <p
+              class="text-justify mx-auto md:text-[20px] text-[13px] max-w-[32ch] md:max-w-[32ch] leading-snug"
+            >
+              Daun aromatik segar dengan rasa sejuk dan menyenangkan. Cocok
+              untuk infused water, teh herbal, garnish makanan, atau campuran
+              dessert sehat.
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-right"
+            class="flex flex-col items-center justify-center"
+          >
+            <div class="rounded-[20px] group">
+              <img
+                src="assets/Product/kangkung.webp"
+                alt="Logo Kangkung"
+                class="w-38 md:w-60 border-2 border-white p-2 transition-transform duration-300 ease-in-out group-hover:scale-110 rounded-xl h-auto"
+              />
+            </div>
+            <h1 class="text-[7vw] md:text-[6vw] font-black leading-tight">
+              KANGKUNG
+            </h1>
+            <p
+              class="text-justify mx-auto md:text-[20px] text-[13px] max-w-[32ch] md:max-w-[32ch] leading-snug"
+            >
+              Sayuran hijau yang populer dengan batang renyah dan daun lembut.
+              Sering diolah sebagai tumisan, cah kangkung, atau campuran mie dan
+              nasi goreng
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-right"
+            class="flex flex-col items-center justify-center"
+          >
+            <div class="rounded-[20px] group">
+              <img
+                src="assets/Product/Kale.webp"
+                alt="Logo Kale"
+                class="w-38 md:w-60 border-2 border-white p-2 transition-transform duration-300 ease-in-out group-hover:scale-110 rounded-xl h-auto"
+              />
+            </div>
+            <h1 class="text-[7vw] md:text-[6vw] font-black leading-tight">
+              KALE
+            </h1>
+            <p
+              class="text-justify mx-auto md:text-[20px] text-[13px] max-w-[32ch] md:max-w-[32ch] leading-snug"
+            >
+              Sayuran superfood dengan tekstur keriting dan rasa sedikit pahit.
+              Sering dijadikan smoothie, salad, atau dipanggang sebagai chips
+              sehat.
+            </p>
+          </div>
+        </div>
+
+        <!-- Bagian Kanan -->
+        <div class="flex flex-col gap-y-12 mt-24">
+          <div
+            data-aos="fade-left"
+            class="flex flex-col items-center justify-center"
+          >
+            <div class="rounded-[20px] group">
+              <img
+                src="assets/Product/tomat.webp"
+                alt="Logo Tomat"
+                class="w-38 md:w-60 border-2 border-white p-2 transition-transform duration-300 ease-in-out group-hover:scale-110 rounded-xl h-auto"
+              />
+            </div>
+            <h1 class="text-[7vw] md:text-[6vw] font-black leading-tight">
+              TOMAT
+            </h1>
+            <p
+              class="text-justify mx-auto md:text-[20px] text-[13px] max-w-[32ch] md:max-w-[32ch] leading-snug"
+            >
+              Buah Segar dengan rasa manis sedikit asam, kaya air dan vitamin,
+              cocok untuk salad, saus, atau dimakan langsung
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-left"
+            class="flex flex-col items-center justify-center"
+          >
+            <div class="rounded-[20px] group">
+              <img
+                src="assets/Product/paprika.webp"
+                alt="Logo Paprika"
+                class="w-38 md:w-60 border-2 border-white p-2 transition-transform duration-300 ease-in-out group-hover:scale-110 rounded-xl h-auto"
+              />
+            </div>
+            <h1 class="text-[7vw] md:text-[6vw] font-black leading-tight">
+              PAPRIKA
+            </h1>
+            <p
+              class="text-justify mx-auto md:text-[20px] text-[13px] max-w-[32ch] md:max-w-[32ch] leading-snug"
+            >
+              Sayuran renyah dengan rasa manis dan sedikit pedas, hadir dalam
+              berbagai warna cerah, ideal untuk tumisan, salad, atau sebagai
+              hiasan makanan.
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-left"
+            class="flex flex-col items-center justify-center"
+          >
+            <div class="rounded-[20px] group">
+              <img
+                src="assets/Product/Sawi.webp"
+                alt="Logo Sawi"
+                class="w-38 md:w-60 border-2 border-white p-2 transition-transform duration-300 ease-in-out group-hover:scale-110 rounded-xl h-auto"
+              />
+            </div>
+            <h1 class="text-[7vw] md:text-[6vw] font-black leading-tight">
+              SAWI
+            </h1>
+            <p
+              class="text-justify mx-auto md:text-[20px] text-[13px] max-w-[32ch] md:max-w-[32ch] leading-snug"
+            >
+              Daun hijau yang sedikit pahit namun kaya nutrisi. Cocok untuk
+              masakan berkuah, tumisan, hingga isian bakpao atau pelengkap mie.
+            </p>
+          </div>
+
+          <div
+            data-aos="fade-left"
+            class="flex flex-col items-center justify-center"
+          >
+            <div class="rounded-[20px] group">
+              <img
+                src="assets/Product/selada.webp"
+                alt="Logo Selada"
+                class="w-38 md:w-60 border-2 border-white p-2 transition-transform duration-300 ease-in-out group-hover:scale-110 rounded-xl h-auto"
+              />
+            </div>
+            <h1 class="text-[7vw] md:text-[6vw] font-black leading-tight">
+              SELADA
+            </h1>
+            <p
+              class="text-justify mx-auto md:text-[20px] text-[13px] max-w-[32ch] md:max-w-[32ch] leading-snug"
+            >
+              Daun lembut dengan rasa segar dan ringan. Favorit dalam salad,
+              sandwich, burger, atau lalapan segar. Memberi kesan renyah dan
+              dingin di setiap gigitan.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Tatsoi -->
+      <div
+        data-aos="fade-up"
+        class="flex flex-row space-x-6 md:space-x-8 items-start justify-center mt-6 my-16 px-6"
+      >
+        <div class="rounded-[20px] group">
+          <img
+            src="assets/Product/Tatsoi.webp"
+            alt="Logo Tatsoi"
+            class="w-64 md:w-60 rounded-xl border-2 border-white p-2 transition-transform duration-300 ease-in-out group-hover:scale-110 h-auto"
+          />
+        </div>
+        <div class="">
+          <h1 class="text-[7vw] md:text-[6vw] font-black leading-tight">
+            TATSOI
+          </h1>
+          <p class="text-left max-w-md md:text-[20px] text-sm leading-snug">
+            Sayuran berdaun hijau gelap dengan tekstur lembut dan rasa ringan.
+            Bisa dinikmati mentah dalam salad atau dimasak ringan dalam sup dan
+            tumisan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="mt-auto bg-black pt-8 pb-2 px-6 text-white text-sm">
+      <div class="flex justify-end mt-6">
+        <ul
+          class="flex space-x-8 md:space-x-12 text-xs tracking-widest pe-0 md:pe-40"
+        >
+          <li><a href="index.html" class="hover:text-green-400">HOME</a></li>
+          <li><a href="#product" class="hover:text-green-400">PRODUCT</a></li>
+          <li>
+            <a href="profile.html" class="hover:text-green-400">PROFILE</a>
+          </li>
+          <li>
+            <a href="contact.html" class="hover:text-green-400">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="relative mt-12 md:mt-20 flex flex-row space-x-8 items-end md:items-end"
+      >
+        <div class="flex space-x-8 mt-4">
+          <a href="#">
+            <img src="assets/logo2.webp" alt="Logo StrawHat" class="h-28" />
+          </a>
+        </div>
+        <div class="flex flex-row items-center mt-6">
+          <a href="https://www.instagram.com/strawhat.idn/"
+            ><img src="assets/icon/icon-07.webp" class="w-16" alt=""
+          /></a>
+          <a href="https://wa.me/6282318500162"
+            ><img src="assets/icon/icon-08.webp" class="w-16" alt=""
+          /></a>
+          <a href="https://www.tiktok.com/@strawhat_idn"
+            ><img src="assets/icon/icon-09.webp" class="w-16" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const burgerBtn = document.getElementById("burgerBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      let menuOpen = false;
+
+      if (burgerBtn && mobileMenu) {
+        burgerBtn.addEventListener("click", () => {
+          menuOpen = !menuOpen;
+
+          if (menuOpen) {
+            // Buka menu
+            mobileMenu.classList.remove(
+              "max-h-0",
+              "opacity-0",
+              "pointer-events-none"
+            );
+            mobileMenu.classList.add(
+              "max-h-[400px]",
+              "opacity-100",
+              "pointer-events-auto"
+            );
+
+            // Hamburger → X
+            burgerBtn
+              .querySelector(".top-line")
+              .classList.add("rotate-45", "translate-y-[5px]");
+            burgerBtn.querySelector(".middle-line").classList.add("opacity-0");
+            burgerBtn
+              .querySelector(".bottom-line")
+              .classList.add("-rotate-45", "-translate-y-[11px]");
+          } else {
+            // Tutup menu
+            mobileMenu.classList.remove(
+              "max-h-[400px]",
+              "opacity-100",
+              "pointer-events-auto"
+            );
+            mobileMenu.classList.add(
+              "max-h-0",
+              "opacity-0",
+              "pointer-events-none"
+            );
+
+            // X → Hamburger
+            burgerBtn
+              .querySelector(".top-line")
+              .classList.remove("rotate-45", "translate-y-[5px]");
+            burgerBtn
+              .querySelector(".middle-line")
+              .classList.remove("opacity-0");
+            burgerBtn
+              .querySelector(".bottom-line")
+              .classList.remove("-rotate-45", "-translate-y-[11px]");
+          }
+        });
+
+        // Klik link → tutup menu dan reset tombol
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            menuOpen = false;
+            mobileMenu.classList.remove(
+              "max-h-[400px]",
+              "opacity-100",
+              "pointer-events-auto"
+            );
+            mobileMenu.classList.add(
+              "max-h-0",
+              "opacity-0",
+              "pointer-events-none"
+            );
+
+            burgerBtn
+              .querySelector(".top-line")
+              .classList.remove("transform-active");
+            burgerBtn
+              .querySelector(".middle-line")
+              .classList.remove("transform-active");
+            burgerBtn
+              .querySelector(".bottom-line")
+              .classList.remove("transform-active");
+          });
+        });
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
